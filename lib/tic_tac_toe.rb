@@ -25,6 +25,12 @@ class TicTacToe
     puts " #{b[6]} | #{b[7]} | #{b[8]} "
   end 
   
-  def input_to_index
+  def input_to_index(position)
+    if position < 1 || position > 9
+      puts "Please enter a valid position (1-9)."
+      return nil 
+    end 
+    
+  end 
     
 end 
