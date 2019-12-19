@@ -15,4 +15,8 @@ class TicTacToe
     @board = [] 
     9.times {|index| @board[index] = " "}
   end 
+  
+  def display_board
+    b = @board 
+    puts " #{b[0]} | #{b[1]} | #{b[2]} "
 end 
