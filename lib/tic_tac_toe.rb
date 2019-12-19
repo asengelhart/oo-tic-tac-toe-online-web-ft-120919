@@ -48,13 +48,18 @@ class TicTacToe
   end
   
   def current_player
-    #binding.pry
     (turn_count + 1).odd? ? "X" : "O" #player for next turn
   end 
   
   def turn 
-    puts ""
-    input = gets
+    puts "Your move, player #{current_player}"
+    index = input_to_index(gets)
+    if !valid_move?(index)
+      puts "Invalid move"
+    else 
+      move(index, current_player)
+      display_board
+    end 
   end 
   
 end 
