@@ -24,4 +24,7 @@ class TicTacToe
     puts "-----------"
     puts " #{b[6]} | #{b[7]} | #{b[8]} "
   end 
+  
+  def input_to_index
+    
 end 
