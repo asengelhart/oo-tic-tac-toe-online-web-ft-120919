@@ -42,5 +42,7 @@ class TicTacToe
   end 
       
   def turn 
-    position = gets
+    puts
+    input = gets
+    
 end 
