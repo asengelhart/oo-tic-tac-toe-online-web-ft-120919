@@ -42,7 +42,7 @@ class TicTacToe
   end 
       
   def turn_count
-    @board.count
+    (0..8).count{|i| position_taken?(i)}
       
   def turn 
     puts
