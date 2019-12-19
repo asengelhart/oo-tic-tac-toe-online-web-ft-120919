@@ -26,12 +26,12 @@ class TicTacToe
   end 
   
   def input_to_index(position)
-    index = position.to_i - 1
-    if index < 0 || index > 8
-      puts "Please enter a valid position (1-9)."
-      return nil 
-    end 
-    index 
+    position.to_i - 1
   end 
     
+  def move(index, token = "X")
+    @board[index] = token
+  end 
+  
+  
 end 
