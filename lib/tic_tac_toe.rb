@@ -45,6 +45,8 @@ class TicTacToe
     (0..8).count{|i| position_taken?(i)}
   end
   
+  def current_player
+    turn_count.even
   def turn 
     puts ""
     input = gets
