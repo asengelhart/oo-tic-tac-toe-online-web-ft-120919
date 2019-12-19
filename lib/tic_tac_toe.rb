@@ -55,12 +55,12 @@ class TicTacToe
     player = current_player
     puts "Your move, player #{player}"
     index = input_to_index(gets)
-    if !valid_move?(index)
+    while !valid_move?(index)
       puts "Invalid move"
-    else 
-      move(index, player)
-      display_board
+      index = input_to_index(gets)
     end 
+    move(index, player)
+    display_board
   end 
   
 end 
