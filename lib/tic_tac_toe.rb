@@ -46,7 +46,9 @@ class TicTacToe
   end
   
   def current_player
-    turn_count.even
+    turn_count.odd? ? "X" : "0"
+  end 
+  
   def turn 
     puts ""
     input = gets
