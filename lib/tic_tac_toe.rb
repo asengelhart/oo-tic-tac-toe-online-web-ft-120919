@@ -26,11 +26,12 @@ class TicTacToe
   end 
   
   def input_to_index(position)
-    if position < 1 || position > 9
+    index = position.to_i - 1
+    if index < 0 || index > 8
       puts "Please enter a valid position (1-9)."
       return nil 
     end 
-    
+    index 
   end 
     
 end 
