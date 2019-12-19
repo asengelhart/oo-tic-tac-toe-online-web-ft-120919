@@ -46,6 +46,7 @@ class TicTacToe
   end
   
   def current_player
+    binding.pry
     turn_count.odd? ? "X" : "0"
   end 
   
