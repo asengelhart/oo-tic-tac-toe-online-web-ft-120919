@@ -48,8 +48,8 @@ class TicTacToe
   end
   
   def current_player
-    binding.pry
-    turn_count.odd? ? "X" : "0"
+    #binding.pry
+    (turn_count + 1).odd? ? "X" : "0" #player for next turn
   end 
   
   def turn 
