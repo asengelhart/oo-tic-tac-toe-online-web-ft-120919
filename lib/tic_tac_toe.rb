@@ -52,12 +52,13 @@ class TicTacToe
   end 
   
   def turn 
-    puts "Your move, player #{current_player}"
+    player = current_player
+    puts "Your move, player #{player}"
     index = input_to_index(gets)
     if !valid_move?(index)
       puts "Invalid move"
     else 
-      move(index, current_player)
+      move(index, player)
       display_board
     end 
   end 
