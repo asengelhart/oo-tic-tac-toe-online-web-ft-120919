@@ -41,4 +41,6 @@ class TicTacToe
     (0..8) === index && !self.position_taken?(index)
   end 
       
+  def turn 
+    position = gets
 end 
