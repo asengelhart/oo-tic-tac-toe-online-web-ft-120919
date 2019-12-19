@@ -72,4 +72,7 @@ class TicTacToe
     return nil 
   end 
   
+  def full?
+    
+  end 
 end 
